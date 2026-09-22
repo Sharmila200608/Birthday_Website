@@ -1,8 +1,6 @@
 # BirthDay Website ❤
 
-A one-page birthday website. Everything — text, styling, animations, and
-all the photos — lives inside a single `index.html` file. No build step,
-no database, no environment variables. Nothing to configure.
+A lightweight, single-file birthday website — no frameworks, no dependencies, no backend. Built with plain HTML, CSS, and JavaScript, it features smooth scroll-triggered animations, an interactive "how well do you know us" quiz, an embedded photo gallery, and optional looping background audio. Designed to be deployed instantly as a static site on Vercel.
 
 ## 1. Run it locally in VS Code
 
@@ -39,18 +37,6 @@ much easier than editing base64 by hand.
    folder (or just `index.html`) into the upload area.
 4. Click **Deploy**. Vercel gives you a live link in under a minute.
 
-**Using the Vercel CLI instead:**
-
-```bash
-npm install -g vercel
-cd pattu-birthday-website
-vercel
-```
-
-Follow the prompts (log in, confirm project settings, accept defaults).
-It deploys and gives you a URL immediately. Run `vercel --prod` to push
-it to your permanent production URL.
-
 **Using GitHub:**
 
 1. Push this folder to a new GitHub repo.
@@ -58,26 +44,6 @@ it to your permanent production URL.
    import that repo, and click **Deploy**. No settings needed — it's
    a static site, Vercel figures it out automatically.
 
-Once deployed, send him the `https://your-project-name.vercel.app` link
-directly — no Claude sign-in wall, no login of any kind. It just opens.
-
-## 4. Adding background music (optional)
-
-The music button is already wired up, it just has no track loaded yet.
-Open `index.html`, find this line near the top of `<body>`:
-
-```html
-<audio id="bgm" loop preload="none"></audio>
-```
-
-Add a `src`, either to a file you host alongside `index.html`:
-
-```html
-<audio id="bgm" loop preload="none" src="song.mp3"></audio>
-```
-
-or to a direct link to a hosted audio file. Drop the mp3 file in this
-same folder if you go the local-file route, then redeploy.
 
 ## 5. Timing it for midnight
 
