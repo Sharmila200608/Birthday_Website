@@ -1,4 +1,4 @@
-# For Pattu ❤
+# BirthDay Website ❤
 
 A one-page birthday website. Everything — text, styling, animations, and
 all the photos — lives inside a single `index.html` file. No build step,
